@@ -45,9 +45,39 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(attackInput) && attackCD <= 0)
         {
-            _attack.SetActive(true);
-            _anim.SetTrigger(_attackHash);
-            attackCD = 20;
+            if (Input.GetAxisRaw("Vertical") > 0)
+            {
+                AttackUp();
+            } 
+            else if (Input.GetAxisRaw("Vertical") < 0)
+            {
+                AttackDown();
+            }
+            else
+            {
+                AttackNormal();
+            }
         }
+    }
+
+    public void AttackNormal()
+    {
+        _attack.SetActive(true);
+        _anim.SetTrigger(_attackHash);
+        attackCD = 20;
+    }
+
+    public void AttackUp()
+    {
+        _attackUp.SetActive(true);
+        _anim.SetTrigger(_attackHash);
+        attackCD = 20;
+    }
+
+    public void AttackDown()
+    {
+        _attackDown.SetActive(true);
+        _anim.SetTrigger(_attackHash);
+        attackCD = 20;
     }
 }

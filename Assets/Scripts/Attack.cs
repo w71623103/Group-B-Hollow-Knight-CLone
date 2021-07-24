@@ -22,4 +22,9 @@ public class Attack : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    protected virtual void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("HitSomething");
+    }
 }
