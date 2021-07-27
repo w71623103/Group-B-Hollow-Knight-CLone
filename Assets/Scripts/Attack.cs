@@ -8,17 +8,19 @@ public class Attack : MonoBehaviour
 
     public int countdown = 0;
 
-    [SerializeField] private int countMax = 10;
+    [SerializeField] private int countHit = 5;
+    [SerializeField] private int countRecover = 10;
     
     public Player player;
 
     private BoxCollider2D _collider;
 
     private Vector2 _normalHitBoxSize;
+    private Vector3 _normalAttackBoxSize;
 
     private void OnEnable()
     {
-        countdown = countMax;
+        countdown = countHit + countRecover;
         player._isMove = false;
     }
 
@@ -29,13 +31,14 @@ public class Attack : MonoBehaviour
         _collider = GetComponent<BoxCollider2D>();
 
         _normalHitBoxSize = _collider.size;
+        _normalAttackBoxSize = transform.localScale;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         countdown--;
-        if (countdown <= countMax/2)
+        if (countdown <= countRecover)
         {
             RemoveCollider();
         }
@@ -61,11 +64,13 @@ public class Attack : MonoBehaviour
     void ResetCollider()
     {
         _collider.size = _normalHitBoxSize;
+        transform.localScale = _normalAttackBoxSize;
     }
     
     void RemoveCollider()
     {
         _collider.size = new Vector2(0, 0);
+        transform.localScale = Vector3.zero;
     }
 
     protected virtual void OnDestructibleHit(Collider2D other)

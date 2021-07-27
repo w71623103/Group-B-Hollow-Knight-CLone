@@ -13,6 +13,6 @@ public class AttackHorizontal : Attack
     protected override void OnEnemyHit(Collider2D other)
     {
         base.OnEnemyHit(other);
-        if(other.CompareTag("Enemy"))player.playerMovement.playerRB.AddForce(Vector2.left * 15, ForceMode2D.Impulse);
+        if(other.CompareTag("Enemy"))player.playerMovement.playerRB.AddForce(Vector2.left * 25, ForceMode2D.Impulse);
     }
 }

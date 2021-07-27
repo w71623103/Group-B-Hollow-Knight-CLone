@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Destructible.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/attack test scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/attack test scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackHorizontal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackHorizontal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +41,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Destructible.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AttackHorizontal.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Attack.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -104,7 +99,7 @@
       <workItem from="1627136185285" duration="4585000" />
       <workItem from="1627312637746" duration="41000" />
       <workItem from="1627312852688" duration="2873000" />
-      <workItem from="1627393711067" duration="2176000" />
+      <workItem from="1627393711067" duration="3615000" />
     </task>
     <servers />
   </component>
