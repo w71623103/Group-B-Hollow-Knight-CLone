@@ -48,6 +48,8 @@ public class Attack : MonoBehaviour
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("HitSomething");
+        OnDestructibleHit(other);
+        OnEnemyHit(other);
     }
 
     private void OnDisable()
@@ -64,5 +66,21 @@ public class Attack : MonoBehaviour
     void RemoveCollider()
     {
         _collider.size = new Vector2(0, 0);
+    }
+
+    protected virtual void OnDestructibleHit(Collider2D other)
+    {
+        if (other.CompareTag("Destructible"))
+        {
+            other.GetComponent<Destructible>().Damage(1);
+        }
+    }
+    
+    protected virtual void OnEnemyHit(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            other.GetComponent<Enemy>().Damage(1);
+        }
     }
 }
