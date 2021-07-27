@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
             spriteR.flipX = true;
     }
 
-    void FixedUpdate()
+    public void MovementFixedUpdate()
     {
         
         horizontalMovement = Input.GetAxis("Horizontal") * playerMovementSpeed;

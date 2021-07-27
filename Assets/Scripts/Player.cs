@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public PlayerAttack playerAttack;
     public PlayerMovement playerMovement;
+
+    public bool _isMove = true;
     
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        playerAttack.Attack();
+    }
+    
+    void FixedUpdate()
+    {
+        if(_isMove) playerMovement.MovementFixedUpdate();
     }
 }
