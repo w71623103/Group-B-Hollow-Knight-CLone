@@ -23,8 +23,9 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 0f;
     public JumpState jState = JumpState.Default;
     public int jumpStartTimer;
-
-    
+    public int maxJumpKeyFrame = 30;
+    public int minJumpKeyFrame = 20;
+    public float jumpForceADD = 1.3f;
 
     // Start is called before the first frame update
     void Start()
@@ -50,13 +51,13 @@ public class PlayerMovement : MonoBehaviour
             case JumpState.Start:
                 if (isGrounded)
                 {
-                    if (jumpStartTimer <= 30)
+                    if (jumpStartTimer <= maxJumpKeyFrame)
                     {
-                        if (jumpStartTimer >= 20)
+                        if (jumpStartTimer >= minJumpKeyFrame)
                         {
                             if (Input.GetKey(KeyCode.K))
                             {
-                                jumpSpeed += 1.3f;
+                                jumpSpeed += jumpForceADD;
                             }
                         }
                         else
