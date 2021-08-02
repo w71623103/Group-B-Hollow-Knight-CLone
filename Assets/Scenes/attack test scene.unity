@@ -325,6 +325,8 @@ MonoBehaviour:
   playerAttack: {fileID: 0}
   playerMovement: {fileID: 0}
   playerController: {fileID: 0}
+  soulAmount: 0
+  moneyAmount: 0
   _isMove: 1
 --- !u!114 &49909089
 MonoBehaviour:
