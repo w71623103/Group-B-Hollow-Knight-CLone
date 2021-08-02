@@ -261,8 +261,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3829972687822279510}
+  - component: {fileID: 7420583393755078802}
   - component: {fileID: 5878015638657966303}
   - component: {fileID: 7150346529086668015}
+  - component: {fileID: 1618220730576110114}
   - component: {fileID: 1544686277551985636}
   - component: {fileID: 5067726589897307309}
   - component: {fileID: 3829972687822279507}
@@ -453,7 +455,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: ab012493f7c60d24e95f4c787ad7963f, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.23219132, a: 1}
+  m_Color: {r: 0.13866138, g: 0.8962264, b: 0.8813735, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
