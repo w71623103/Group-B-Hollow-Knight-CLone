@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     public PlayerAttack playerAttack;
     public PlayerMovement playerMovement;
     public PlayerController playerController;
+    public int soul = 0;
+    public int money = 0;
+    public int Hp = 5;
+
 
     public bool _isMove = true;
     
@@ -28,5 +32,23 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         if(_isMove) playerMovement.Movement();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Soul":
+                soul++;
+                Destroy(collision.gameObject);
+                break;
+            case "Money":
+                money++;
+                Destroy(collision.gameObject);
+                break;
+            case "Enemy":
+                Hp--;
+                break;
+        }
     }
 }
