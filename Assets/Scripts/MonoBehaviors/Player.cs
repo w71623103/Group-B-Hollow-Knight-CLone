@@ -7,9 +7,10 @@ public class Player : MonoBehaviour
     public PlayerAttack playerAttack;
     public PlayerMovement playerMovement;
     public PlayerController playerController;
-    
-    public int soulAmount = 0;
-    public int moneyAmount = 0;
+    public int soul = 0;
+    public int money = 0;
+    public int Hp = 5;
+
 
     public bool _isMove = true;
     
@@ -33,20 +34,21 @@ public class Player : MonoBehaviour
         if(_isMove) playerMovement.Movement();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-
-        switch (collision.gameObject.tag)
-        {
-            case "Soul":
-                soulAmount++;
-                Destroy(collision.gameObject);
-                break;
-
-            case "Money":
-                moneyAmount++;
-                Destroy(collision.gameObject);
-                break;
-        }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Soul":
+                soul++;
+                Destroy(collision.gameObject);
+                break;
+            case "Money":
+                money++;
+                Destroy(collision.gameObject);
+                break;
+            case "Enemy":
+                Hp--;
+                break;
+        }
     }
 }
