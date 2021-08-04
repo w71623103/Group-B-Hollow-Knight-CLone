@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public int money = 0;
     public int Hp = 5;
 
+    public Room room;
+
 
     public bool _isMove = true;
     
@@ -34,21 +36,43 @@ public class Player : MonoBehaviour
         if(_isMove) playerMovement.Movement();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        switch (collision.gameObject.tag)
-        {
-            case "Soul":
-                soul++;
-                Destroy(collision.gameObject);
-                break;
-            case "Money":
-                money++;
-                Destroy(collision.gameObject);
-                break;
-            case "Enemy":
-                Hp--;
-                break;
-        }
+    private void OnTriggerEnter2D(Collider2D collision)
+
+    {
+
+        switch (collision.gameObject.tag)
+
+        {
+
+            case "Soul":
+
+                soul++;
+
+                Destroy(collision.gameObject);
+
+                break;
+
+            case "Money":
+
+                money++;
+
+                Destroy(collision.gameObject);
+
+                break;
+
+            case "Enemy":
+
+                Hp--;
+
+                break;
+            
+            case "Room":
+
+                room = collision.gameObject.GetComponent<Room>();
+
+                break;
+
+        }
+
     }
 }

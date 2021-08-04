@@ -9,6 +9,7 @@ TagManager:
   - Destructible
   - Soul
   - Money
+  - Room
   layers:
   - Default
   - TransparentFX
