@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 6085857507960911376}
   - component: {fileID: 6085857507960911377}
   - component: {fileID: 4843793100629694174}
+  - component: {fileID: 8664450308812112610}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -308,8 +309,9 @@ MonoBehaviour:
   playerAttack: {fileID: 0}
   playerMovement: {fileID: 0}
   playerController: {fileID: 0}
-  soulAmount: 0
-  moneyAmount: 0
+  soul: 0
+  money: 0
+  Hp: 5
   _isMove: 1
 --- !u!114 &173571922265069999
 MonoBehaviour:
@@ -481,7 +483,26 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.1635225
+  m_Radius: 0.77
+--- !u!95 &8664450308812112610
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085857507960911378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3896114d8b470744a9eaf61b43f558a0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8381584924506381564
 GameObject:
   m_ObjectHideFlags: 0
