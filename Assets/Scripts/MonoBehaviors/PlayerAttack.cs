@@ -12,8 +12,9 @@ public class PlayerAttack : MonoBehaviour
     private Animator _anim;
     private PlayerController _playerController;
 
-    private int _attackHash;
-
+    private int _attackHashH;
+    private int _attackHashUP;
+    private int _attackHashDown;
     [SerializeField] private int attackCD = 0;
     
     // Start is called before the first frame update
@@ -25,7 +26,9 @@ public class PlayerAttack : MonoBehaviour
 
         _anim = GetComponent<Animator>();
         _playerController = GetComponent<PlayerController>();
-        _attackHash = Animator.StringToHash("Attack");
+        _attackHashH = Animator.StringToHash("AttackH");
+        _attackHashUP = Animator.StringToHash("AttackUp");
+        _attackHashDown = Animator.StringToHash("AttackDown");
 
     }
 
@@ -63,21 +66,21 @@ public class PlayerAttack : MonoBehaviour
     public void AttackNormal()
     {
         _attack.SetActive(true);
-        _anim.SetTrigger(_attackHash);
+        _anim.SetTrigger(_attackHashH);
         attackCD = 20;
     }
 
     public void AttackUp()
     {
         _attackUp.SetActive(true);
-        _anim.SetTrigger(_attackHash);
+        _anim.SetTrigger(_attackHashUP);
         attackCD = 20;
     }
 
     public void AttackDown()
     {
         _attackDown.SetActive(true);
-        _anim.SetTrigger(_attackHash);
+        _anim.SetTrigger(_attackHashDown);
         attackCD = 20;
     }
 }

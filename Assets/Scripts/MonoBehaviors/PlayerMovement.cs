@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private int _JTUPHash;
     private int _JTDownHash;
     private int _JHash;
-    private int _WalkHash;
+    //private int _WalkHash;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,14 +44,20 @@ public class PlayerMovement : MonoBehaviour
         _JTUPHash = Animator.StringToHash("JTUP");
         _JTDownHash = Animator.StringToHash("JTD");
         _JHash = Animator.StringToHash("Jumping");
-        _WalkHash = Animator.StringToHash("Walking");
+        //_WalkHash = Animator.StringToHash("Walking");
     }
 
     public void Jump()
     {
+        playerAN.SetBool("isGroundAnim", isGrounded);
         if (playerController.inputJumpDown && isGrounded)
         {
             jState = JumpState.Start;
+            playerAN.SetTrigger(_JTUPHash);
+        }
+        else if ((playerRB.velocity.y < 0) && jState == JumpState.Default && !isGrounded)
+        {
+            jState = JumpState.Down;
         }
         switch (jState)
         {
@@ -63,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
             case JumpState.Start:
                 if (isGrounded)
                 {
-                    playerAN.SetTrigger(_JTUPHash);
+                    
                     if (jumpStartTimer <= maxJumpKeyFrame)
                     {
                         if (jumpStartTimer >= minJumpKeyFrame)
@@ -109,7 +115,8 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case JumpState.Ground:
-                //need animator condition
+                playerAN.SetTrigger(_JTDownHash);
+                playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
                 jState = JumpState.Default;
                 break;
         }
@@ -136,7 +143,12 @@ public class PlayerMovement : MonoBehaviour
         if (horizontalMovement != 0)
         {
             //playerAN.SetTrigger(_WalkHash);
-            playerAN.Play("Walking");
+            //playerAN.Play("Walking");
+            playerAN.SetBool("isWalking", true);
+        }
+        else 
+        {
+            playerAN.SetBool("isWalking", false);
         }
 
     }
