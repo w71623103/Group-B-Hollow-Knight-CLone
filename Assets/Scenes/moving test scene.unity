@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6085857507960911377, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911378, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -140,11 +144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911382, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.47
+      value: -6.55
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911382, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.01
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911382, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -427,7 +431,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 19.169086
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

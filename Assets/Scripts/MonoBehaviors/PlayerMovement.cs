@@ -9,13 +9,14 @@ public class PlayerMovement : MonoBehaviour
         Default,
         Start,
         Up,
-        Trans,
+        
         Down,
         Ground,
     };
     public Rigidbody2D playerRB;
     public SpriteRenderer spriteR;
     public PlayerController playerController;
+    public Animator playerAN;
     public bool isLeft = true;
     public float playerMovementSpeed = 5f;
     public bool isGrounded = false;
@@ -28,13 +29,22 @@ public class PlayerMovement : MonoBehaviour
     public int minJumpKeyFrame = 20;
     public float jumpForceADD = 1.3f;
 
+    private int _JTUPHash;
+    private int _JTDownHash;
+    private int _JHash;
+    private int _WalkHash;
     // Start is called before the first frame update
     void Start()
     {
         playerRB = GetComponent<Rigidbody2D>(); //get a reference to the Rigidbody2D component on this player gameObject!
         spriteR = GetComponent<SpriteRenderer>();
         playerController = GetComponent<PlayerController>();
+        playerAN = GetComponent<Animator>();
 
+        _JTUPHash = Animator.StringToHash("JTUP");
+        _JTDownHash = Animator.StringToHash("JTD");
+        _JHash = Animator.StringToHash("Jumping");
+        _WalkHash = Animator.StringToHash("Walking");
     }
 
     public void Jump()
@@ -53,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
             case JumpState.Start:
                 if (isGrounded)
                 {
+                    playerAN.SetTrigger(_JTUPHash);
                     if (jumpStartTimer <= maxJumpKeyFrame)
                     {
                         if (jumpStartTimer >= minJumpKeyFrame)
@@ -82,24 +93,32 @@ public class PlayerMovement : MonoBehaviour
                 }
                 break;
             case JumpState.Up:
+                playerAN.SetTrigger(_JHash);
                 //playerCD.size = new Vector2(defaultColliderSize.x * 0.8f, defaultColliderSize.y);
                 if (playerRB.velocity.y <= 0)
                     jState = JumpState.Down;
+
                 break;
             case JumpState.Down:
+                playerAN.SetTrigger(_JHash);
                 //playerCD.size = new Vector2(defaultColliderSize.x * 0.8f, defaultColliderSize.y);
                 if (isGrounded)
                 {
-                    jState = JumpState.Default;
+                    jState = JumpState.Ground;
                 }
+                break;
+
+            case JumpState.Ground:
+                //need animator condition
+                jState = JumpState.Default;
                 break;
         }
 
         var scale = transform.localScale;
         if (isLeft)
-            transform.localScale = new Vector3(scale.x < 0 ? scale.x : -scale.x, scale.y, scale.z);
+            transform.localScale = new Vector3(scale.x > 0 || horizontalMovement == 0 ? scale.x : -scale.x, scale.y, scale.z);
         else
-            transform.localScale = new Vector3(scale.x > 0 ? scale.x : -scale.x, scale.y, scale.z);
+            transform.localScale = new Vector3(scale.x < 0 || horizontalMovement == 0 ? scale.x : -scale.x, scale.y, scale.z);
     }
 
     public void Movement()
@@ -113,6 +132,12 @@ public class PlayerMovement : MonoBehaviour
             isLeft = true;
         else if (horizontalMovement > 0)
             isLeft = false;
+
+        if (horizontalMovement != 0)
+        {
+            //playerAN.SetTrigger(_WalkHash);
+            playerAN.Play("Walking");
+        }
 
     }
 
