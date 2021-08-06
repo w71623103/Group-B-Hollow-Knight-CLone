@@ -6,7 +6,7 @@ using UnityEngine;
 public class Destructible : MonoBehaviour
 {
 
-    [SerializeField] private int hp = 1;
+    [SerializeField] protected int hp = 1;
     
     // Start is called before the first frame update
     void Start()

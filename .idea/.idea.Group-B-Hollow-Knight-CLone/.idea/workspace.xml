@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +53,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -108,6 +119,7 @@
       <workItem from="1627928067288" duration="800000" />
       <workItem from="1628094393414" duration="8338000" />
       <workItem from="1628107379325" duration="358000" />
+      <workItem from="1628266386373" duration="4126000" />
     </task>
     <servers />
   </component>

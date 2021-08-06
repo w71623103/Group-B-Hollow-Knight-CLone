@@ -86,6 +86,7 @@ public class Attack : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             other.GetComponent<Enemy>().Damage(1);
+            other.GetComponent<Enemy>().Knockback(transform.GetComponentInParent<Transform>());
         }
     }
 }
