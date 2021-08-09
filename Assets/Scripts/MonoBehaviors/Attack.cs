@@ -50,7 +50,6 @@ public class Attack : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("HitSomething");
         OnDestructibleHit(other);
         OnEnemyHit(other);
     }

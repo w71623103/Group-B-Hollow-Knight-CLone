@@ -6,7 +6,6 @@ public class AttackHorizontal : Attack
 {
     protected override void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(player);
         base.OnTriggerEnter2D(other);
     }
 
