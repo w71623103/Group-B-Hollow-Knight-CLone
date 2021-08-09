@@ -50,7 +50,6 @@ public class Attack : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("HitSomething");
         OnDestructibleHit(other);
         OnEnemyHit(other);
     }
@@ -86,6 +85,7 @@ public class Attack : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             other.GetComponent<Enemy>().Damage(1);
+            other.GetComponent<Enemy>().Knockback(transform.GetComponentInParent<Transform>());
         }
     }
 }
