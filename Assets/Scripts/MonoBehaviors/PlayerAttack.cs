@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
         _anim = GetComponent<Animator>();
         _playerController = GetComponent<PlayerController>();
         _attackHashH = Animator.StringToHash("AttackH");
-        _attackHashUP = Animator.StringToHash("AttackUp");
+        _attackHashUP = Animator.StringToHash("AttackUP");
         _attackHashDown = Animator.StringToHash("AttackDown");
 
     }
