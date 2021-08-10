@@ -226,6 +226,8 @@ MonoBehaviour:
   countHit: 5
   countRecover: 10
   player: {fileID: 0}
+  bounceForceSpikes: 40
+  bounceForceOther: 25
 --- !u!61 &2145609212753981250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -312,6 +314,9 @@ MonoBehaviour:
   soul: 0
   money: 0
   Hp: 5
+  stun: 0
+  stunMax: 20
+  knockbackForce: 60
   room: {fileID: 0}
   _isMove: 1
 --- !u!114 &173571922265069999

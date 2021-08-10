@@ -22,6 +22,7 @@ public class Attack : MonoBehaviour
     {
         countdown = countHit + countRecover;
         player._isMove = false;
+        RemoveCollider();
     }
 
     private void Awake()
@@ -38,6 +39,7 @@ public class Attack : MonoBehaviour
     void FixedUpdate()
     {
         countdown--;
+        
         if (countdown <= countRecover)
         {
             RemoveCollider();

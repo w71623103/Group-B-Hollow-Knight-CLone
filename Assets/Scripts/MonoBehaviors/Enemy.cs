@@ -30,11 +30,11 @@ public class Enemy : Destructible
         }
     }
 
-    public void Knockback(Transform other)
+    public virtual void Knockback(Transform other)
     {
         stun = stunMax;
         _rb.velocity = Vector2.zero;
-        _rb.AddForce(new Vector2((other.position.x - transform.position.x), 0).normalized * knockbackForce, ForceMode2D.Impulse);
+        _rb.AddForce(new Vector2((other.position.x - transform.position.x), 0).normalized * -knockbackForce, ForceMode2D.Impulse);
         Debug.Log(_rb.velocity);
     }
 
