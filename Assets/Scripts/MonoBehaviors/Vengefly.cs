@@ -121,4 +121,10 @@ public class Vengefly : Enemy
             }
         }
     }
+
+    public override void Knockback(Transform other)
+    {
+        lerp = 1;
+        base.Knockback(other);
+    }
 }

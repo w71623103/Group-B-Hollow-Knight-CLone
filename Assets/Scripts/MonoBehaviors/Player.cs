@@ -10,6 +10,10 @@ public class Player : MonoBehaviour
     public int soul = 0;
     public int money = 0;
     public int Hp = 5;
+    
+    [SerializeField] protected int stun = 0;
+    [SerializeField] private int stunMax = 15;
+    [SerializeField] private float knockbackForce = 10f;
 
     public Room room;
 
@@ -27,13 +31,23 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerAttack.Attack();
-        playerMovement.Jump();
+        if (stun <= 0)
+        {
+            playerAttack.Attack();
+            playerMovement.Jump();
+        }
     }
     
     void FixedUpdate()
     {
-        if(_isMove) playerMovement.Movement();
+        if (stun > 0)
+        {
+            stun--;
+        }
+        else
+        {
+            if(_isMove) playerMovement.Movement();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -63,6 +77,14 @@ public class Player : MonoBehaviour
             case "Enemy":
 
                 Hp--;
+                Knockback(collision.transform);
+
+                break;
+            
+            case "Spikes":
+
+                Hp--;
+                Knockback(collision.transform);
 
                 break;
             
@@ -74,5 +96,13 @@ public class Player : MonoBehaviour
 
         }
 
+    }
+    
+    public void Knockback(Transform other)
+    {
+        stun = stunMax;
+        playerMovement.playerRB.velocity = Vector2.zero;
+        playerMovement.playerRB.AddForce(new Vector2((other.position.x - transform.position.x), 0).normalized * -knockbackForce, ForceMode2D.Impulse);
+        playerMovement.playerRB.AddForce(Vector2.up * 20, ForceMode2D.Impulse);
     }
 }

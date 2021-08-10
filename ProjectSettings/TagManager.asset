@@ -11,6 +11,7 @@ TagManager:
   - Money
   - Room
   - Attack
+  - Spikes
   layers:
   - Default
   - TransparentFX
