@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     public int maxJumpKeyFrame = 30;
     public int minJumpKeyFrame = 20;
     public float jumpForceADD = 1.3f;
+    public float jumpMinForce = 20f;
+    public float jumpDeltaSpeed = 0f;
 
     private int _JTUPHash;
     private int _JTDownHash;
@@ -76,21 +78,23 @@ public class PlayerMovement : MonoBehaviour
                         {
                             if (playerController.inputJump)
                             {
-                                jumpSpeed += jumpForceADD;
+                                jumpDeltaSpeed += jumpForceADD;
                             }
                         }
                         else
                         {
-                            jumpSpeed = 20f;
+                            jumpSpeed = jumpMinForce;
                         }
 
                         jumpStartTimer++;
                     }
                     else
                     {
+                        jumpSpeed = jumpMinForce + jumpDeltaSpeed;
                         playerRB.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
                         jState = JumpState.Up;
                         jumpStartTimer = 0;
+                        jumpDeltaSpeed = 0;
                     }
                 }
                 else 

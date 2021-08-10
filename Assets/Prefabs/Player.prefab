@@ -331,7 +331,7 @@ MonoBehaviour:
   playerController: {fileID: 0}
   playerAN: {fileID: 0}
   isLeft: 1
-  playerMovementSpeed: 5
+  playerMovementSpeed: 12
   isGrounded: 0
   verticalMovement: 0
   horizontalMovement: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   jumpStartTimer: 0
   maxJumpKeyFrame: 30
   minJumpKeyFrame: 20
-  jumpForceADD: 1.3
+  jumpForceADD: 1.7
 --- !u!114 &8375665111361599140
 MonoBehaviour:
   m_ObjectHideFlags: 0
