@@ -8,8 +8,10 @@ public class Player : MonoBehaviour
     public PlayerMovement playerMovement;
     public PlayerController playerController;
     public int soul = 0;
+    public int soulMax = 99;
     public int money = 0;
     public int Hp = 5;
+    public int hpMax = 5;
     
     [SerializeField] protected int stun = 0;
     [SerializeField] private int stunMax = 15;
@@ -61,6 +63,7 @@ public class Player : MonoBehaviour
             case "Soul":
 
                 soul++;
+                UIManager.m_SoulChange();
 
                 Destroy(collision.gameObject);
 
@@ -69,6 +72,8 @@ public class Player : MonoBehaviour
             case "Money":
 
                 money++;
+
+                UIManager.m_MoneyChange();
 
                 Destroy(collision.gameObject);
 
@@ -79,12 +84,16 @@ public class Player : MonoBehaviour
                 Hp--;
                 Knockback(collision.transform);
 
+                UIManager.m_HealthChange();
+
                 break;
             
             case "Spikes":
 
                 Hp--;
                 Knockback(collision.transform);
+
+                UIManager.m_HealthChange();
 
                 break;
             
