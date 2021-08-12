@@ -192,6 +192,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 173571922265069999, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+      propertyPath: jumpForceADD
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 173571922265069999, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+      propertyPath: jumpMinForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 173571922265069999, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+      propertyPath: minJumpKeyFrame
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 173571922265069999, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+      propertyPath: playerMovementSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911378, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -465,8 +481,8 @@ Transform:
   m_Children:
   - {fileID: 215173138}
   - {fileID: 1062421036}
-  - {fileID: 1210962278}
   - {fileID: 1332964913}
+  - {fileID: 1210962278}
   - {fileID: 123478556}
   m_Father: {fileID: 0}
   m_RootOrder: 4
