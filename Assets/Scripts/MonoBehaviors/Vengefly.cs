@@ -7,8 +7,6 @@ public class Vengefly : Enemy
 {
     [SerializeField] private float playerActivateDistance = 8f;
 
-    [SerializeField] private Player player;
-
     [SerializeField] private float spd = 2f;
 
     private bool isChasing;
@@ -22,6 +20,7 @@ public class Vengefly : Enemy
     protected override void Behavior()
     {
         CheckDistanceFromPlayer();
+        if(!_audioSource.isPlaying)_audioSource.Play();
         if (isChasing)
         {
             if (lerp >= 1)
@@ -35,7 +34,7 @@ public class Vengefly : Enemy
 
     private void CheckDistanceFromPlayer()
     {
-        if (!isChasing && Mathf.Abs((transform.position - player.transform.position).magnitude) < playerActivateDistance)
+        if (!isChasing && DistanceFromPlayer() < playerActivateDistance)
         {
             isChasing = true;
         }

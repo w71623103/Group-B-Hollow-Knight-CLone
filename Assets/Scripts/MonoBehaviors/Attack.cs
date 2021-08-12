@@ -22,7 +22,6 @@ public class Attack : MonoBehaviour
     {
         countdown = countHit + countRecover;
         player._isMove = false;
-        RemoveCollider();
     }
 
     private void Awake()

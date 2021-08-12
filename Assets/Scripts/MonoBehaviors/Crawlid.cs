@@ -9,12 +9,13 @@ public class Crawlid : Enemy
     [SerializeField] private Vector2 dir = new Vector2(1, -1); //-1 is left, 1 is right
 
     [SerializeField] private float spd = 5f;
-    
-    
+
+
     protected override void Behavior()
     {
         CheckGroundFront();
         _rb.velocity = new Vector2(dir.x * spd, _rb.velocity.y);
+        if(!_audioSource.isPlaying)_audioSource.Play();
     }
 
     private void CheckGroundFront()
