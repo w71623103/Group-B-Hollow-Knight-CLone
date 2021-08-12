@@ -24,10 +24,13 @@ public class PlayerMovement : MonoBehaviour
     public float horizontalMovement = 0f;
     public float jumpSpeed = 0f;
     public JumpState jState = JumpState.Default;
-    public int jumpStartTimer;
+    public float jumpStartTimer;
     public int maxJumpKeyFrame = 30;
     public int minJumpKeyFrame = 20;
     public float jumpForceADD = 1.3f;
+    public float jumpMinForce = 10f;
+    public bool isJumped = false;
+
 
     private int _JTUPHash;
     private int _JTDownHash;
@@ -67,38 +70,32 @@ public class PlayerMovement : MonoBehaviour
                 jumpSpeed = 0f;
                 break;
             case JumpState.Start:
-                if (isGrounded)
+                if (isGrounded && !isJumped)
                 {
-                    
+                    playerRB.AddForce(Vector2.up * jumpMinForce, ForceMode2D.Impulse);
+                    isJumped = true;
+                }
+                else
+                {
                     if (jumpStartTimer <= maxJumpKeyFrame)
                     {
                         if (jumpStartTimer >= minJumpKeyFrame)
                         {
                             if (playerController.inputJump)
                             {
-                                jumpSpeed += jumpForceADD;
+                                playerRB.AddForce(Vector2.up * (jumpForceADD * Time.deltaTime * 100), ForceMode2D.Impulse);
                             }
                         }
-                        else
-                        {
-                            jumpSpeed = 20f;
-                        }
-
-                        jumpStartTimer++;
+                        jumpStartTimer += Time.deltaTime * 100;
                     }
                     else
                     {
-                        playerRB.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
                         jState = JumpState.Up;
-                        jumpStartTimer = 0;
                     }
-                }
-                else 
-                {
-                    jState = JumpState.Up;
                 }
                 break;
             case JumpState.Up:
+                jumpStartTimer = 0;
                 playerAN.SetTrigger(_JHash);
                 //playerCD.size = new Vector2(defaultColliderSize.x * 0.8f, defaultColliderSize.y);
                 if (playerRB.velocity.y <= 0)
@@ -144,7 +141,8 @@ public class PlayerMovement : MonoBehaviour
         {
             //playerAN.SetTrigger(_WalkHash);
             //playerAN.Play("Walking");
-            playerAN.SetBool("isWalking", true);
+            if(isGrounded)
+                playerAN.SetBool("isWalking", true);
         }
         else 
         {
