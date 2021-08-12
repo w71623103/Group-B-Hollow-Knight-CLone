@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D playerRB;
     public SpriteRenderer spriteR;
     public PlayerController playerController;
+    public PlayerAudio playerAudio;
     public Animator playerAN;
     public bool isLeft = true;
     public float playerMovementSpeed = 5f;
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         playerRB = GetComponent<Rigidbody2D>(); //get a reference to the Rigidbody2D component on this player gameObject!
         spriteR = GetComponent<SpriteRenderer>();
         playerController = GetComponent<PlayerController>();
+        playerAudio = GetComponent<PlayerAudio>();
         playerAN = GetComponent<Animator>();
 
         _JTUPHash = Animator.StringToHash("JTUP");
@@ -55,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
         playerAN.SetBool("isGroundAnim", isGrounded);
         if (playerController.inputJumpDown && isGrounded)
         {
+            isJumped = false;
             jState = JumpState.Start;
             playerAN.SetTrigger(_JTUPHash);
         }
@@ -74,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     playerRB.AddForce(Vector2.up * jumpMinForce, ForceMode2D.Impulse);
                     isJumped = true;
+                    playerAudio.PlayAudioJump();
                 }
                 else
                 {
@@ -108,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
                 if (isGrounded)
                 {
                     jState = JumpState.Ground;
+                    playerAudio.PlayAudioLand();
                 }
                 break;
 
@@ -137,25 +142,27 @@ public class PlayerMovement : MonoBehaviour
         else if (horizontalMovement > 0)
             isLeft = false;
 
-        if (horizontalMovement != 0)
+        if (horizontalMovement != 0 && isGrounded)
         {
-            //playerAN.SetTrigger(_WalkHash);
-            //playerAN.Play("Walking");
-            if(isGrounded)
-                playerAN.SetBool("isWalking", true);
+            playerAN.SetBool("isWalking", true);
+                playerAudio.PlayWalking();
         }
         else 
         {
             playerAN.SetBool("isWalking", false);
+            playerAudio.StopWalking();
         }
 
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = true;
+            isJumped = false;
+            Vector3 hit = collision.contacts[0].normal;
+            float angle = Vector3.Angle(hit, Vector3.up);
+            if (Mathf.Approximately(angle, 0)) isGrounded = true;
         }
     }
 
@@ -170,9 +177,10 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+            //playerAudio.StopWalking();
         }
     }
 
