@@ -65,12 +65,12 @@ public class UIManager : MonoBehaviour
 
     //For testing purposes only, remove in web build.
     //TODO: Remove
-    private void Update()
+    /*private void Update()
     {
         SetSoulMeter();
         SetHealthUnits();
         SetMoney();
-    }
+    }*/
 
     public void SetSoulMeter()
     {
