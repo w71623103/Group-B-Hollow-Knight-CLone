@@ -104,6 +104,12 @@ public class Player : MonoBehaviour
 
                 break;
             
+            case "Spike":
+
+                Hit(1, collision.transform);
+
+                break;
+            
             case "Room":
 
                 room = collision.gameObject.GetComponent<Room>();

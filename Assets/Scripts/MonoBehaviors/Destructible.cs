@@ -9,7 +9,7 @@ public class Destructible : MonoBehaviour
 
     [SerializeField] protected int hp = 1;
     
-    [SerializeField] private GameObject corpse;
+    [SerializeField] protected GameObject corpse;
 
     [SerializeField] private GameObject money;
     [SerializeField] private int moneyDropped = 3;
@@ -23,7 +23,7 @@ public class Destructible : MonoBehaviour
 
     protected void OnDestroy()
     {
-        Instantiate(corpse, transform.position, Quaternion.identity);
+        if(corpse) Instantiate(corpse, transform.position, Quaternion.identity);
 
         for (int i = 0; i < moneyDropped; i++)
         {

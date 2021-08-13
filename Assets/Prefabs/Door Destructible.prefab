@@ -99,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1
   corpse: {fileID: 6373105310975741692, guid: 5cde3af1e17ea2d4a9d2faecf8baf675, type: 3}
+  money: {fileID: 0}
+  moneyDropped: 0
 --- !u!50 &186598403341347016
 Rigidbody2D:
   serializedVersion: 4

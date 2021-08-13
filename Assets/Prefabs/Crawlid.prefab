@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3657665442440349947}
   - component: {fileID: 5084767810350286618}
   - component: {fileID: 7602322187675949350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Crawlid
   m_TagString: Enemy
   m_Icon: {fileID: 0}

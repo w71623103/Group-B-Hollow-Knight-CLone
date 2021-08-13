@@ -81,6 +81,11 @@ public class Attack : MonoBehaviour
         {
             other.GetComponent<Destructible>().Damage(1);
         }
+        
+        if (other.CompareTag("Spike"))
+        {
+            other.GetComponent<FallingSpike>().Damage(1);
+        }
     }
     
     protected virtual void OnEnemyHit(Collider2D other)
