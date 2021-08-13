@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 3657665442440349946}
   - component: {fileID: 3657665442440349947}
   - component: {fileID: 5084767810350286618}
-  m_Layer: 0
+  - component: {fileID: 7602322187675949350}
+  m_Layer: 3
   m_Name: Crawlid
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -75,9 +76,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: ab012493f7c60d24e95f4c787ad7963f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 21300000, guid: ff28954eea5b9d64cbfd83cd7d060793, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -120,18 +121,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.086304545, y: -1.1439515}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 15.2, y: 15.2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.8248253, y: 2.3410323}
   m_EdgeRadius: 0
 --- !u!114 &3657665442440349947
 MonoBehaviour:
@@ -146,11 +147,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 2
+  corpse: {fileID: 1120791681650775290, guid: 6a651947feb34e7428be558f97d6ed5e, type: 3}
+  money: {fileID: 6857885054926600083, guid: 78df41f648955444597a24046254d4e7, type: 3}
+  moneyDropped: 3
   stun: 0
   stunMax: 15
   knockbackForce: 15
   awakeRange: 49
-  rayLength: 1
+  rayLength: 3.35
   dir: {x: 1, y: -1}
   spd: 5
 --- !u!82 &5084767810350286618
@@ -249,3 +253,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &7602322187675949350
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3657665442440349940}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 163d23d1ec0e22543aaad555aa8c7901, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

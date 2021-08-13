@@ -2,42 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerDie.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerDie.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerHitStart.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerHitStart.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/未命名作品-3 9.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/未命名作品-3 9.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-1 9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-1 9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-10.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-11.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-2 9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-2 9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-3 9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-3 9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-4 8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-4 8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-5 4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-5 4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-6 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-6 3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-7.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Player/Hit/未命名作品-9.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Test.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Test.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimation.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door Destructible.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door Destructible.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,19 +52,22 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackHorizontal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackDown.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoulMeterSO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/objectMoving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Falling Spike.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -162,6 +137,7 @@
       <workItem from="1628789155284" duration="5599000" />
       <workItem from="1628798861086" duration="2680000" />
       <workItem from="1628805050781" duration="1218000" />
+      <workItem from="1628869997817" duration="7687000" />
     </task>
     <servers />
   </component>

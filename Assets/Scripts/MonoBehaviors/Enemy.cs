@@ -10,9 +10,10 @@ public class Enemy : Destructible
     [SerializeField] private float knockbackForce = 10f;
 
     [SerializeField] private float awakeRange = 49f;
-    
+
     protected Rigidbody2D _rb;
     protected AudioSource _audioSource;
+    protected Animator _anim;
 
     protected GameObject player;
 
@@ -24,6 +25,7 @@ public class Enemy : Destructible
 
         _rb = GetComponent<Rigidbody2D>();
         _audioSource = GetComponent<AudioSource>();
+        _anim = GetComponent<Animator>();
         
         player = GameObject.FindGameObjectWithTag("Player");
     }
