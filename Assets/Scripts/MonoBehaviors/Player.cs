@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
 
             case "Soul":
 
-                soul++;
+                soul += 11;
                 UIManager.m_SoulChange();
 
                 Destroy(collision.gameObject);

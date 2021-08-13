@@ -46,7 +46,10 @@ public class PlayerAttack : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (attackCD > 0) attackCD--;
+        if (attackCD > 0)
+        {
+            attackCD--;
+        }
     }
 
     public void Attack()

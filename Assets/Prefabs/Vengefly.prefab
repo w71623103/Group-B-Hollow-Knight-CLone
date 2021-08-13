@@ -146,6 +146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 2
+  corpse: {fileID: 6236921114712999601, guid: 6803a935ef4a90746863095f6825554e, type: 3}
+  money: {fileID: 6857885054926600083, guid: 78df41f648955444597a24046254d4e7, type: 3}
+  moneyDropped: 3
   stun: 0
   stunMax: 20
   knockbackForce: 10

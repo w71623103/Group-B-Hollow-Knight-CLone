@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 173571922265069999, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
-      propertyPath: maxJumpKeyFrame
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 2642585559805056252, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -161,10 +157,6 @@ PrefabInstance:
     - target: {fileID: 3050684183320758260, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Color.r
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3513208903734723999, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
-      propertyPath: knockbackForce
-      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4914880824428797102, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Color.a
@@ -457,6 +449,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3657665442440349946, guid: ddc08eab4306e8b48915a406c4b633f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 15.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657665442440349946, guid: ddc08eab4306e8b48915a406c4b633f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 15.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3657665442440349950, guid: ddc08eab4306e8b48915a406c4b633f3, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -467,7 +467,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3657665442440349950, guid: ddc08eab4306e8b48915a406c4b633f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.44
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3657665442440349950, guid: ddc08eab4306e8b48915a406c4b633f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -521,6 +521,10 @@ PrefabInstance:
     - target: {fileID: 9220589557482591659, guid: e4eb03cdb7a69794b80901ab086f3ec3, type: 3}
       propertyPath: m_Name
       value: Vengefly
+      objectReference: {fileID: 0}
+    - target: {fileID: 9220589557482591659, guid: e4eb03cdb7a69794b80901ab086f3ec3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9220589557482591661, guid: e4eb03cdb7a69794b80901ab086f3ec3, type: 3}
       propertyPath: m_RootOrder

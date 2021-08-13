@@ -16,6 +16,8 @@ public class objectMoving : MonoBehaviour
     void Start()
     {
         objRB = GetComponent<Rigidbody2D>();
+        
+        target = GameObject.FindWithTag("Player");
         //auto1 = transform.position;
     }
 

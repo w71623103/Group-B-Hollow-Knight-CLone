@@ -10,7 +10,6 @@ public class Crawlid : Enemy
 
     [SerializeField] private float spd = 5f;
 
-
     protected override void Behavior()
     {
         CheckGroundFront();
@@ -33,6 +32,7 @@ public class Crawlid : Enemy
             localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
             transform.localScale = localScale;
             dir = new Vector2(-dir.x, dir.y);
+            _anim.SetTrigger("Turn");
         }
     }
 }
