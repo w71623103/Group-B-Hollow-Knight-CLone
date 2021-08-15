@@ -11,6 +11,8 @@ public class PlayerAttack : MonoBehaviour
 
     private Animator _anim;
     private PlayerController _playerController;
+    private PlayerAudio _playerAudio;
+    private PlayerMovement _playerMovement;
 
     private int _attackHashH;
     private int _attackHashUP;
@@ -30,6 +32,9 @@ public class PlayerAttack : MonoBehaviour
         _attackHashUP = Animator.StringToHash("AttackUP");
         _attackHashDown = Animator.StringToHash("AttackDown");
 
+        _playerAudio = GetComponent<PlayerAudio>();
+        _playerMovement = GetComponent<PlayerMovement>();
+
     }
 
     // Update is called once per frame
@@ -41,18 +46,22 @@ public class PlayerAttack : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (attackCD > 0) attackCD--;
+        if (attackCD > 0)
+        {
+            attackCD--;
+        }
     }
 
     public void Attack()
     {
         if (_playerController.input0Down && attackCD <= 0)
         {
+            _playerAudio.PlayAudioAttack();
             if (_playerController.inputAxis.y > 0)
             {
                 AttackUp();
             } 
-            else if (_playerController.inputAxis.y < 0)
+            else if (_playerController.inputAxis.y < 0 && !_playerMovement.isGrounded)
             {
                 AttackDown();
             }

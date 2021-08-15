@@ -65,12 +65,12 @@ public class UIManager : MonoBehaviour
 
     //For testing purposes only, remove in web build.
     //TODO: Remove
-    private void Update()
+    /*private void Update()
     {
         SetSoulMeter();
         SetHealthUnits();
         SetMoney();
-    }
+    }*/
 
     public void SetSoulMeter()
     {
@@ -81,6 +81,15 @@ public class UIManager : MonoBehaviour
 
         soulMeterFill.anchoredPosition = new Vector3(0, Mathf.Lerp(smFillBotPosY, smFillTopPosY, t), 0);
         soulMeterFull.anchoredPosition = new Vector3(0, Mathf.Lerp(smFullBotPosY, smFullTopPosY, t), 0);
+
+        if (player.soul < 99f / 3)
+        {
+            soulMeterFull.GetComponent<Image>().color = new Color(0.8f, 0.8f, 0.8f, 1);
+        }
+        else
+        {
+            soulMeterFull.GetComponent<Image>().color = Color.white;
+        }
     }
 
     public void SetHealthUnits()

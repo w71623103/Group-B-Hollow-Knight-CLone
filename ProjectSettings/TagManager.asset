@@ -12,6 +12,7 @@ TagManager:
   - Room
   - Attack
   - Spikes
+  - Spike
   layers:
   - Default
   - TransparentFX

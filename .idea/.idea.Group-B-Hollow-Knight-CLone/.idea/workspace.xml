@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Soul Meter Fill.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Soul Meter Fill.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Soul Meter Liquid.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Soul Meter Liquid.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Health Unit.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Health Unit.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI testing scene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/UI testing scene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/money.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/soulmeter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/soulmeter.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/ui_main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/ui_main.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door Destructible.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door Destructible.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +28,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/84/4be0db2a/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E2857B7-9BE4-468C-A1C2-8DDA75978191/7a/18b0b714/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8D3A4CBA-CDAE-45B3-84E0-E80B376938E1/76/54facd92/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B0E795E4-8CF0-4D7A-9193-EA9447AF406A/0b/0e8e5b1f/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/c9/cf4e3398/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
@@ -61,20 +50,24 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInputSO.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackHorizontal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackDown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoulMeterSO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/objectMoving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Falling Spike.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -141,6 +134,10 @@
       <workItem from="1628523150591" duration="6023000" />
       <workItem from="1628605076297" duration="4933000" />
       <workItem from="1628693033347" duration="4905000" />
+      <workItem from="1628789155284" duration="5599000" />
+      <workItem from="1628798861086" duration="2680000" />
+      <workItem from="1628805050781" duration="1218000" />
+      <workItem from="1628869997817" duration="7687000" />
     </task>
     <servers />
   </component>

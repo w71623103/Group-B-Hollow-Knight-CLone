@@ -10,6 +10,8 @@ public class Attack : MonoBehaviour
 
     [SerializeField] private int countHit = 5;
     [SerializeField] private int countRecover = 10;
+
+    [SerializeField] private GameObject soul;
     
     public Player player;
 
@@ -22,7 +24,6 @@ public class Attack : MonoBehaviour
     {
         countdown = countHit + countRecover;
         player._isMove = false;
-        RemoveCollider();
     }
 
     private void Awake()
@@ -80,6 +81,11 @@ public class Attack : MonoBehaviour
         {
             other.GetComponent<Destructible>().Damage(1);
         }
+        
+        if (other.CompareTag("Spike"))
+        {
+            other.GetComponent<FallingSpike>().Damage(1);
+        }
     }
     
     protected virtual void OnEnemyHit(Collider2D other)
@@ -88,6 +94,7 @@ public class Attack : MonoBehaviour
         {
             other.GetComponent<Enemy>().Damage(1);
             other.GetComponent<Enemy>().Knockback(transform.GetComponentInParent<Transform>());
+            Instantiate(soul, other.transform.position, Quaternion.identity);
         }
     }
 }
