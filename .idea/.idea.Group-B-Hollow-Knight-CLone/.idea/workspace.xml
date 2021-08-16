@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/startMenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/startMenu.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/startbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/startbutton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/startscreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI/startscreen.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/LoadScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/LoadScene.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/startMenu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/startMenu.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +56,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackHorizontal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoulMeterSO.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
@@ -66,13 +67,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Ceiling Spike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/LoadScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CeilingSpike.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackHorizontal.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
