@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Crawlid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Crawlid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Spike.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Spike.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vengefly.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vengefly.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +61,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Falling Spike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackDown.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />

@@ -152,7 +152,7 @@ MonoBehaviour:
   moneyDropped: 3
   stun: 0
   stunMax: 15
-  knockbackForce: 40
+  knockbackForce: 20
   awakeRange: 49
   rayLength: 3.35
   rayLengthFront: 3

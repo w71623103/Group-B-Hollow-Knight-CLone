@@ -151,10 +151,10 @@ MonoBehaviour:
   moneyDropped: 3
   stun: 0
   stunMax: 20
-  knockbackForce: 10
+  knockbackForce: 20
   awakeRange: 49
   playerActivateDistance: 25
-  spd: 4
+  spd: 6
 --- !u!82 &2987626549637485552
 AudioSource:
   m_ObjectHideFlags: 0
