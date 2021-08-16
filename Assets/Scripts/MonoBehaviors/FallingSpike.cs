@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class FallingSpike : Destructible
 {
+    public float fallingGravity = 6;
     private bool _spawnedCorpse = false;
     protected new void OnDestroy()
     {
@@ -29,6 +30,9 @@ public class FallingSpike : Destructible
             other.GetComponent<Enemy>().Knockback(transform.GetComponentInParent<Transform>());
         }
     }
-    
-    
+
+    public void Fall()
+    {
+        GetComponent<Rigidbody2D>().gravityScale = fallingGravity;
+    }
 }
