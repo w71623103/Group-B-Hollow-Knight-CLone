@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Falling Spike.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Falling Spike.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Ceiling Spike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Ceiling Spike.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B0E795E4-8CF0-4D7A-9193-EA9447AF406A/0b/0e8e5b1f/Rigidbody2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EF667CDC-82BF-4A4E-911D-1DDEA9FF581D/c9/cf4e3398/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Ceiling Spike.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -57,15 +60,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/objectMoving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Falling Spike.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackDown.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Ceiling Spike.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />

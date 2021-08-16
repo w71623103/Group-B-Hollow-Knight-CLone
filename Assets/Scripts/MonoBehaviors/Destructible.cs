@@ -13,6 +13,8 @@ public class Destructible : MonoBehaviour
 
     [SerializeField] private GameObject money;
     [SerializeField] private int moneyDropped = 3;
+
+    private bool isQuitting;
     
     
     // Start is called before the first frame update
@@ -21,14 +23,22 @@ public class Destructible : MonoBehaviour
         
     }
 
-    protected void OnDestroy()
+    void OnApplicationQuit()
     {
-        if(corpse) Instantiate(corpse, transform.position, Quaternion.identity);
+        isQuitting = true;
+    }
 
-        for (int i = 0; i < moneyDropped; i++)
+    void OnDestroy()
+    {
+        if (!isQuitting && !GameManager.Instance.isLoadNewScene)
         {
-            var temp = Instantiate(money, transform.position, Quaternion.identity);
-            temp.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-3f, 3f), 10), ForceMode2D.Impulse);
+            if (corpse) Instantiate(corpse, transform.position, Quaternion.identity);
+
+            for (int i = 0; i < moneyDropped; i++)
+            {
+                var temp = Instantiate(money, transform.position, Quaternion.identity);
+                temp.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-3f, 3f), 10), ForceMode2D.Impulse);
+            }
         }
     }
 
