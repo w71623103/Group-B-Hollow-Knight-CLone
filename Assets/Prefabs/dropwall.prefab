@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5326714645317608214}
   - component: {fileID: 570848870289031556}
   - component: {fileID: 689809892856045664}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: dropwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
