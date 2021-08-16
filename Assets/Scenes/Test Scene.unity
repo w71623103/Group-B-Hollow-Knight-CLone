@@ -11769,6 +11769,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 915558182}
     m_Modifications:
+    - target: {fileID: 467747119524177896, guid: cde635c1080503b42a6708b8acd25f59, type: 3}
+      propertyPath: m_SortingOrder
+      value: 34
+      objectReference: {fileID: 0}
     - target: {fileID: 3000216320508174933, guid: cde635c1080503b42a6708b8acd25f59, type: 3}
       propertyPath: m_Name
       value: walltileL
