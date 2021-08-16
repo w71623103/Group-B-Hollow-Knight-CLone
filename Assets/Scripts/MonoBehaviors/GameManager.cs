@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (!Instance) Instance = this;
+        Instance = this;
     }
 
     private void Start()
@@ -43,10 +43,16 @@ public class GameManager : MonoBehaviour
 
     IEnumerator DeathSceneLoad()
     {
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 80; i++)
         {
-            if(i >= 19) SceneManager.LoadScene(deathSceneName, LoadSceneMode.Single);
-            yield return null;
+            if(i >= 79) SceneManager.LoadScene(deathSceneName, LoadSceneMode.Single);
+            yield return new WaitForSeconds(0.01333f);
         }
+    }
+
+    private void OnDestroy()
+    {
+        m_Death = null;
+        m_GameEnd = null;
     }
 }

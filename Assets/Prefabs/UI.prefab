@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 4083864075433073703}
   - component: {fileID: 4083864075433073696}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: UI Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,8 +427,8 @@ MonoBehaviour:
   smFillTopPosY: 0
   smFillBotPosY: -130
   player: {fileID: 0}
-  soulMeterFull: {fileID: 4083864075023362645}
-  soulMeterFill: {fileID: 4083864076086376582}
+  soulMeterFull: {fileID: 4083864075023362644}
+  soulMeterFill: {fileID: 4083864076086376581}
   SMFillPos: 0
   SMFullPos: 0
   healthUnit: {fileID: 8644055833990263073, guid: 1854e611aad9f5148888794b5112edd8, type: 3}

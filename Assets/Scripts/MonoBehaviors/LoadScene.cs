@@ -16,7 +16,7 @@ public class LoadScene : MonoBehaviour
     */
     public void ChangToScene(string sceneToChangeTo)
     {
-        SceneManager.LoadScene(sceneToChangeTo);
+        SceneManager.LoadScene(sceneToChangeTo, LoadSceneMode.Single);
     }
 
 }

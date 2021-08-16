@@ -369,6 +369,8 @@ MonoBehaviour:
   stun: 0
   stunMax: 20
   knockbackForce: 120
+  knockUpForceEnemy: 30
+  knockUpForceGroundSpikes: 60
   room: {fileID: 0}
   _isMove: 1
 --- !u!114 &173571922265069999

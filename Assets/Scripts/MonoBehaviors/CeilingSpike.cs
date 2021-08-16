@@ -19,6 +19,7 @@ public class CeilingSpike : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             fallingSpike.Fall();
+            Destroy(gameObject);
         }
     }
 }

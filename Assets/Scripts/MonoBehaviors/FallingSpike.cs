@@ -34,5 +34,6 @@ public class FallingSpike : Destructible
     public void Fall()
     {
         GetComponent<Rigidbody2D>().gravityScale = fallingGravity;
+        transform.parent = null;
     }
 }

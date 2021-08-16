@@ -19,9 +19,12 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private Player player;
 
-    [SerializeField] private RectTransform soulMeterFull;
-    [SerializeField] private RectTransform soulMeterFill;
-
+    [SerializeField] private GameObject soulMeterFull;
+    [SerializeField] private GameObject soulMeterFill;
+    
+    private RectTransform soulMeterFullTransform;
+    private RectTransform soulMeterFillTransform;
+    
     [SerializeField] private float SMFillPos = 0;
     [SerializeField] private float SMFullPos = 0;
 
@@ -43,6 +46,9 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        soulMeterFillTransform = soulMeterFill.GetComponent<RectTransform>();
+        soulMeterFullTransform = soulMeterFull.GetComponent<RectTransform>();
+        
         m_SoulChange += SetSoulMeter;
         m_SoulChange();
 
@@ -79,8 +85,8 @@ public class UIManager : MonoBehaviour
         SMFillPos = Mathf.Lerp(smFillBotPosY, smFillTopPosY, t);
         SMFullPos = Mathf.Lerp(smFullBotPosY, smFullTopPosY, t);
 
-        soulMeterFill.anchoredPosition = new Vector3(0, Mathf.Lerp(smFillBotPosY, smFillTopPosY, t), 0);
-        soulMeterFull.anchoredPosition = new Vector3(0, Mathf.Lerp(smFullBotPosY, smFullTopPosY, t), 0);
+        soulMeterFillTransform.anchoredPosition = new Vector3(0, Mathf.Lerp(smFillBotPosY, smFillTopPosY, t), 0);
+        soulMeterFullTransform.anchoredPosition = new Vector3(0, Mathf.Lerp(smFullBotPosY, smFullTopPosY, t), 0);
 
         if (player.soul < 99f / 3)
         {
@@ -110,5 +116,12 @@ public class UIManager : MonoBehaviour
     public void SetMoney()
     {
         tmpMoney.text = player.money.ToString();
+    }
+
+    void OnDestroy()
+    {
+        m_HealthChange = null;
+        m_MoneyChange = null;
+        m_SoulChange = null;
     }
 }
