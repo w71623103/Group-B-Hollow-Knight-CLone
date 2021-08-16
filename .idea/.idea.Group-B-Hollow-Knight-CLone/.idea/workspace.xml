@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/objectMoving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Falling Spike.cs" />
@@ -62,6 +62,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackDown.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAttack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />

@@ -35,6 +35,7 @@ public class Enemy : Destructible
         if (!isAwake)
         {
             if (DistanceFromPlayer() < awakeRange) isAwake = true;
+            if(_audioSource.isPlaying) _audioSource.Stop();
         }
         else
         {
