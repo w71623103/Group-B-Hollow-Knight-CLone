@@ -125,7 +125,7 @@ public class Player : MonoBehaviour
         stun = stunMax;
         playerMovement.playerRB.velocity = Vector2.zero;
         playerMovement.playerRB.AddForce(new Vector2((other.position.x - transform.position.x), 0).normalized * -knockbackForce, ForceMode2D.Impulse);
-        playerMovement.playerRB.AddForce(Vector2.up * 20, ForceMode2D.Impulse);
+        playerMovement.playerRB.AddForce(Vector2.up * 30, ForceMode2D.Impulse);
         playerMovement.playerAN.SetTrigger(_playerHitAnim);
         playerAudio.PlayAudioHurt();
     }

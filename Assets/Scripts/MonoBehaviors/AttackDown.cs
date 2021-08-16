@@ -20,11 +20,13 @@ public class AttackDown : Attack
     {
         if (other.gameObject.CompareTag("Spikes"))
         {
+            player.playerMovement.playerRB.velocity = new Vector2(player.playerMovement.playerRB.velocity.x, 0);
             player.playerMovement.playerRB.AddForce(Vector2.up * bounceForceSpikes, ForceMode2D.Impulse);
         }
         
         if (other.gameObject.CompareTag("Enemy"))
         {
+            player.playerMovement.playerRB.velocity = new Vector2(player.playerMovement.playerRB.velocity.x, 0);
             player.playerMovement.playerRB.AddForce(Vector2.up * bounceForceOther, ForceMode2D.Impulse);
         }
     }

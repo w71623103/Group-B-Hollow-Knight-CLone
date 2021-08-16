@@ -76,7 +76,7 @@ public class PlayerAttack : MonoBehaviour
     {
         _attack.SetActive(true);
         _anim.SetTrigger(_attackHashH);
-        attackCD = 20;
+        attackCD = 40;
     }
 
     public void AttackUp()
