@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2341727887163167059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.936064, y: 14.82036, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,12 +100,12 @@ Rigidbody2D:
   m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 6
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &2341727887163167068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148,3 +148,4 @@ MonoBehaviour:
   corpse: {fileID: 7798198642843986034, guid: 48aa0f808badc614b846f086d6b67e94, type: 3}
   money: {fileID: 6857885054926600083, guid: 78df41f648955444597a24046254d4e7, type: 3}
   moneyDropped: 0
+  fallingGravity: 6

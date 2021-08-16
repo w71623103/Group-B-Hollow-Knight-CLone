@@ -23,8 +23,6 @@ public class Player : MonoBehaviour
 
     public Room room;
 
-    public static UnityAction m_Death;
-
 
     public bool _isMove = true;
     
@@ -39,7 +37,7 @@ public class Player : MonoBehaviour
 
         _playerHitAnim = Animator.StringToHash("Hit");
 
-        m_Death += DieAnim;
+        GameManager.m_Death += DieAnim;
     }
 
     // Update is called once per frame
@@ -137,7 +135,7 @@ public class Player : MonoBehaviour
         UIManager.m_HealthChange();
         if (Hp <= 0)
         {
-            m_Death();
+            GameManager.m_Death();
         }
     }
 

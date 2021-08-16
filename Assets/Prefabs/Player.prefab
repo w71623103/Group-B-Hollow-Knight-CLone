@@ -368,7 +368,7 @@ MonoBehaviour:
   hpMax: 5
   stun: 0
   stunMax: 20
-  knockbackForce: 150
+  knockbackForce: 120
   room: {fileID: 0}
   _isMove: 1
 --- !u!114 &173571922265069999
@@ -518,7 +518,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 6
   m_Sprite: {fileID: 8145330047459180198, guid: 86ba5ecb9cf5a004ebe1d0fda993123f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

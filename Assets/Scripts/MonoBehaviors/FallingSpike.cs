@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class FallingSpike : Destructible
 {
+    public float fallingGravity = 6;
+    private bool _spawnedCorpse = false;
     protected new void OnDestroy()
     {
         Debug.Log("Particles?");
@@ -14,7 +16,11 @@ public class FallingSpike : Destructible
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            Instantiate(corpse, transform.position, Quaternion.identity);
+            if (!_spawnedCorpse)
+            {
+                Instantiate(corpse, transform.position, Quaternion.identity);
+                _spawnedCorpse = true;
+            }
             gameObject.SetActive(false);
         }
 
@@ -23,5 +29,10 @@ public class FallingSpike : Destructible
             other.GetComponent<Enemy>().Damage(1);
             other.GetComponent<Enemy>().Knockback(transform.GetComponentInParent<Transform>());
         }
+    }
+
+    public void Fall()
+    {
+        GetComponent<Rigidbody2D>().gravityScale = fallingGravity;
     }
 }
