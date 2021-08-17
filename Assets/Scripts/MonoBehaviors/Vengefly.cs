@@ -9,6 +9,8 @@ public class Vengefly : Enemy
 
     [SerializeField] private float spd = 2f;
 
+    private float dir = 1; // -1 is left, 1 is right
+
     private bool isChasing;
 
     private Vector2 targetPos;
@@ -16,6 +18,18 @@ public class Vengefly : Enemy
     private Vector2 currPos;
 
     private float lerp = 1;
+
+    private int isChasingHash;
+    private int turnHash;
+    private int startleHash;
+
+    protected override void Start()
+    {
+        base.Start();
+        isChasingHash = Animator.StringToHash("isChasing");
+        turnHash = Animator.StringToHash("Turn");
+        startleHash = Animator.StringToHash("Startle");
+    }
     
     protected override void Behavior()
     {
@@ -37,6 +51,8 @@ public class Vengefly : Enemy
         if (!isChasing && DistanceFromPlayer() < playerActivateDistance)
         {
             isChasing = true;
+            _anim.SetBool(isChasingHash, true);
+            _anim.SetTrigger(startleHash);
         }
     }
 
@@ -50,7 +66,13 @@ public class Vengefly : Enemy
             vel = new Vector2(Mathf.Abs(vel.y) * Mathf.Sign(vel.x), vel.y);
         }
         vel.Normalize();
+        vel = vel * spd;
         //auto2 = vel;
+        
+        if (Mathf.Sign(vel.x) != Mathf.Sign(dir))
+        {
+            Turn();
+        }
         
         var position = transform.position;
         targetPos = new Vector2(position.x + vel.x, position.y + vel.y);
@@ -76,6 +98,12 @@ public class Vengefly : Enemy
             temp = new Vector2(Mathf.Abs(temp.y) * Mathf.Sign(temp.x), temp.y);
         }
         temp.Normalize();
+        temp = temp * spd;
+
+        if (Mathf.Sign(temp.x) != Mathf.Sign(dir))
+        {
+            Turn();
+        }
         
         var position = transform.position;
         targetPos = new Vector2(position.x + temp.x, position.y + temp.y);
@@ -125,5 +153,14 @@ public class Vengefly : Enemy
     {
         lerp = 1;
         base.Knockback(other);
+    }
+
+    private void Turn()
+    {
+        var localScale = transform.localScale;
+        localScale = new Vector3(-localScale.x, localScale.y, localScale.z);
+        transform.localScale = localScale;
+        dir = -dir;
+        _anim.SetTrigger(turnHash);
     }
 }

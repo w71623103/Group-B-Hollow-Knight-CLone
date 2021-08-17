@@ -20,7 +20,7 @@ public class Enemy : Destructible
     private bool isAwake = false;
     
     // Start is called before the first frame update
-    protected void Start()
+    protected virtual void Start()
     {
 
         _rb = GetComponent<Rigidbody2D>();
