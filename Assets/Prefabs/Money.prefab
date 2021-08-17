@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6857885054926600078}
   - component: {fileID: 6857885054926600081}
   - component: {fileID: 6857885054926600080}
+  - component: {fileID: 5536498999572525590}
+  - component: {fileID: 5162573984448230158}
   m_Layer: 0
   m_Name: Money
   m_TagString: Money
@@ -100,7 +102,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9e3a0e8491fc89543ab847693ead9f03, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -121,3 +123,34 @@ CircleCollider2D:
   m_Offset: {x: -0.024968386, y: 0}
   serializedVersion: 2
   m_Radius: 0.26529723
+--- !u!95 &5536498999572525590
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6857885054926600083}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 504a7e1aef099004cbbb1981839b4fd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5162573984448230158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6857885054926600083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04f4f0a41175194c97dcead9fdd8221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
