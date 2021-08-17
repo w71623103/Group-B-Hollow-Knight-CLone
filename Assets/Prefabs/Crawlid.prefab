@@ -153,7 +153,7 @@ MonoBehaviour:
   stun: 0
   stunMax: 15
   knockbackForce: 20
-  awakeRange: 49
+  awakeRange: 25
   rayLength: 3.35
   rayLengthFront: 3
   dir: {x: 1, y: -1}
