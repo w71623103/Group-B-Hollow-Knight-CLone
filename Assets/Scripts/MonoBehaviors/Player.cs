@@ -9,8 +9,9 @@ public class Player : MonoBehaviour
     public PlayerMovement playerMovement;
     public PlayerController playerController;
     public PlayerAudio playerAudio;
-    public int soul = 0;
-    public int soulMax = 99;
+    public Focus focus;
+    public float soul = 0;
+    public float soulMax = 99f;
     public int money = 0;
     public int Hp = 5;
     public int hpMax = 5;
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         playerController = GetComponent<PlayerController>();
         playerAudio = GetComponent<PlayerAudio>();
-
+        focus = GetComponent<Focus>();
         _playerHitAnim = Animator.StringToHash("Hit");
 
         GameManager.m_Death += DieAnim;
@@ -49,7 +50,11 @@ public class Player : MonoBehaviour
         {
             playerAttack.Attack();
             playerMovement.Jump();
+            focus.focus();
         }
+
+        if (soul > soulMax) soul = soulMax;
+        if (soul < 0) soul = 0;
     }
     
     void FixedUpdate()
@@ -74,7 +79,7 @@ public class Player : MonoBehaviour
 
             case "Soul":
 
-                soul += 11;
+                soul += 11f;
                 UIManager.m_SoulChange();
 
                 Destroy(collision.gameObject);
@@ -155,5 +160,17 @@ public class Player : MonoBehaviour
     public void DieAnim()
     {
         playerMovement.playerAN.SetTrigger("Die");
+    }
+
+    public void decreaseSoul(float decreaseVal) 
+    {
+        soul -= decreaseVal;
+        UIManager.m_SoulChange();
+    }
+
+    public void heal(int val)
+    {
+        if(Hp+val <= hpMax) Hp+=val ;
+        UIManager.m_HealthChange();
     }
 }

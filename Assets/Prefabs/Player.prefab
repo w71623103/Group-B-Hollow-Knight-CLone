@@ -98,7 +98,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.6331897, y: 0}
+  m_Offset: {x: -11.153027, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.266384, y: 1}
+  m_Size: {x: 23.306057, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2700490853695598490
 MonoBehaviour:
@@ -266,7 +266,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009909153, y: -11.573648}
+  m_Offset: {x: -0.09381616, y: -15.525872}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -277,7 +277,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.1296415, y: 24.147297}
+  m_Size: {x: 3.140046, y: 32.051743}
   m_EdgeRadius: 0
 --- !u!50 &8615068008454132811
 Rigidbody2D:
@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 173571922265069999}
   - component: {fileID: 8375665111361599140}
   - component: {fileID: 2812404015405355501}
+  - component: {fileID: 5497620752830773191}
   - component: {fileID: 6085857507960911379}
   - component: {fileID: 6085857507960911376}
   - component: {fileID: 6085857507960911377}
@@ -361,6 +362,7 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   playerController: {fileID: 0}
   playerAudio: {fileID: 0}
+  focus: {fileID: 0}
   soul: 0
   soulMax: 99
   money: 0
@@ -435,6 +437,25 @@ MonoBehaviour:
   inputJump: 0
   input0Down: 0
   input1Down: 0
+  inputFocus: 0
+  inputFocusDown: 0
+--- !u!114 &5497620752830773191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085857507960911378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3cda3eae6e7d946a39a3dfd9b1a8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  player: {fileID: 3513208903734723999}
+  fState: 0
+  playerAN: {fileID: 8664450308812112610}
+  healtphase: 33
 --- !u!50 &6085857507960911379
 Rigidbody2D:
   serializedVersion: 4
@@ -903,7 +924,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.031485796, y: 7.41522}
+  m_Offset: {x: -0.051706076, y: 9.915753}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -914,7 +935,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5023274, y: 15.830441}
+  m_Size: {x: 3.1400456, y: 20.831507}
   m_EdgeRadius: 0
 --- !u!50 &5096238001894587458
 Rigidbody2D:
