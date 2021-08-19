@@ -17,45 +17,49 @@ public class Focus : MonoBehaviour
     private int fsHash;
     private int ffHash;
     public Animator playerAN;
-    public int healtphase = 33;
+    public float healtphase = 32f;
+    public float animationDelayer = 0.5f;
 
     void Start()
     {
         player = GetComponent<Player>();
         playerAN = GetComponent<Animator>();
         fsHash = Animator.StringToHash("FocusStart");
-        ffHash = Animator.StringToHash("FocusFinish"); 
+        ffHash = Animator.StringToHash("FocusFinish");
+        healtphase /= animationDelayer;
     }
 
     public void focus() 
     {
+        
         switch (fState)
         {
             case FocusState.Default:
-                if (player.playerController.inputFocus && player.soul > 0)
+                if (player.playerController.inputFocusDown && player.soul > 0f)
                 {
                     playerAN.SetTrigger(fsHash);
                     fState = FocusState.Process;
                 }
                 break;
             case FocusState.Process:
-                if (player.playerController.inputFocusDown && player.soul > 0)
+                
+                if (player.playerController.inputFocus && player.soul > 0f)
                 {
-                    /* Cannot work
-                    player.soul--;
-                    if (counter >= healtphase)
-                    {
-                        if (player.Hp < player.hpMax)
-                        {
-                            player.Hp++;
-                        }
-                        counter = 0;
-                    }
+                    //Debug.Log("AAA");
+                    player.decreaseSoul(1 * animationDelayer);
                     counter++;
-                    */
+                    if (counter > healtphase)
+                    {
+                        player.heal(1);
+                        counter = 0;
+                        fState = FocusState.Finish;
+                    }
                 }
                 else 
                 {
+                    //counter++;
+                    
+                    
                     fState = FocusState.Finish;
                     counter = 0;
                 }
