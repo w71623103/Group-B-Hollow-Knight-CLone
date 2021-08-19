@@ -10,4 +10,5 @@ public class PlayerInputSO : ScriptableObject
     public KeyCode keyJump = KeyCode.K;
     public string axisH = "Horizontal";
     public string axisV = "Vertical";
+    public KeyCode keyFocus = KeyCode.F;
 }

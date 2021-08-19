@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public PlayerMovement playerMovement;
     public PlayerController playerController;
     public PlayerAudio playerAudio;
+    public Focus focus;
     public int soul = 0;
     public int soulMax = 99;
     public int money = 0;
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         playerController = GetComponent<PlayerController>();
         playerAudio = GetComponent<PlayerAudio>();
-
+        focus = GetComponent<Focus>();
         _playerHitAnim = Animator.StringToHash("Hit");
 
         GameManager.m_Death += DieAnim;
@@ -49,6 +50,7 @@ public class Player : MonoBehaviour
         {
             playerAttack.Attack();
             playerMovement.Jump();
+            focus.focus();
         }
     }
     

@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public bool inputJump;
     public bool input0Down;
     public bool input1Down;
+    public bool inputFocus;
 
     void Update()
     {
@@ -21,5 +22,6 @@ public class PlayerController : MonoBehaviour
         inputJump = Input.GetKey(playerInput.keyJump);
         input0Down = Input.GetKeyDown(playerInput.key0);
         input1Down = Input.GetKeyDown(playerInput.key1);
+        inputFocus = Input.GetKey(playerInput.keyFocus);
     }
 }
