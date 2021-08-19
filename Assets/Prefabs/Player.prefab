@@ -310,10 +310,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6085857507960911382}
   - component: {fileID: 3513208903734723999}
+  - component: {fileID: 5497620752830773191}
   - component: {fileID: 173571922265069999}
   - component: {fileID: 8375665111361599140}
   - component: {fileID: 2812404015405355501}
-  - component: {fileID: 5497620752830773191}
   - component: {fileID: 6085857507960911379}
   - component: {fileID: 6085857507960911376}
   - component: {fileID: 6085857507960911377}
@@ -375,6 +375,23 @@ MonoBehaviour:
   knockUpForceGroundSpikes: 60
   room: {fileID: 0}
   _isMove: 1
+--- !u!114 &5497620752830773191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6085857507960911378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3cda3eae6e7d946a39a3dfd9b1a8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  player: {fileID: 3513208903734723999}
+  fState: 0
+  playerAN: {fileID: 8664450308812112610}
+  TimeLimit: 1
 --- !u!114 &173571922265069999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,23 +456,6 @@ MonoBehaviour:
   input1Down: 0
   inputFocus: 0
   inputFocusDown: 0
---- !u!114 &5497620752830773191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6085857507960911378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a3cda3eae6e7d946a39a3dfd9b1a8b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  counter: 0
-  player: {fileID: 3513208903734723999}
-  fState: 0
-  playerAN: {fileID: 8664450308812112610}
-  healtphase: 33
 --- !u!50 &6085857507960911379
 Rigidbody2D:
   serializedVersion: 4

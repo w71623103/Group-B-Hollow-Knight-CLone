@@ -11,14 +11,14 @@ public class Focus : MonoBehaviour
         Finish,
     };
 
-    public int counter = 0;
+    public float counter = 0f;
     public Player player;
     public FocusState fState = FocusState.Default;
     private int fsHash;
     private int ffHash;
     public Animator playerAN;
-    public float healtphase = 32f;
-    public float animationDelayer = 0.5f;
+    public float TimeLimit = 1f;
+    //public float animationDelayer = 0.5f;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class Focus : MonoBehaviour
         playerAN = GetComponent<Animator>();
         fsHash = Animator.StringToHash("FocusStart");
         ffHash = Animator.StringToHash("FocusFinish");
-        healtphase /= animationDelayer;
+        //TimeLimit /= animationDelayer;
     }
 
     public void focus() 
@@ -46,11 +46,14 @@ public class Focus : MonoBehaviour
                 if (player.playerController.inputFocus && player.soul > 0f)
                 {
                     //Debug.Log("AAA");
-                    player.decreaseSoul(1 * animationDelayer);
-                    counter++;
-                    if (counter > healtphase)
+                    
+                    counter += Time.deltaTime;
+                    player.decreaseSoul(Time.deltaTime*(33/TimeLimit));
+                    if (counter > TimeLimit)
                     {
+                        
                         player.heal(1);
+                        player.soul = Mathf.Ceil(player.soul);
                         counter = 0;
                         fState = FocusState.Finish;
                     }

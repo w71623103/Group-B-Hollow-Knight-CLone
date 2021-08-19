@@ -50,15 +50,17 @@ public class Player : MonoBehaviour
         {
             playerAttack.Attack();
             playerMovement.Jump();
+            //if(Hp < hpMax) 
             focus.focus();
         }
-
+        
         if (soul > soulMax) soul = soulMax;
         if (soul < 0) soul = 0;
     }
     
     void FixedUpdate()
     {
+        
         if (stun > 0)
         {
             stun--;
@@ -78,21 +80,21 @@ public class Player : MonoBehaviour
         {
 
             case "Soul":
-
+                Destroy(collision.gameObject);
                 soul += 11f;
                 UIManager.m_SoulChange();
 
-                Destroy(collision.gameObject);
+                
 
                 break;
 
             case "Money":
-
+                Destroy(collision.gameObject);
                 money++;
 
                 UIManager.m_MoneyChange();
 
-                Destroy(collision.gameObject);
+                
 
                 break;
 
@@ -170,7 +172,8 @@ public class Player : MonoBehaviour
 
     public void heal(int val)
     {
-        if(Hp+val <= hpMax) Hp+=val ;
+        if(Hp+val <= hpMax) Hp+=val;
+        
         UIManager.m_HealthChange();
     }
 

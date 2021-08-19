@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6236921114712999607}
   - component: {fileID: 6236921114712999600}
   - component: {fileID: 5978280663544023217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Soul
   m_TagString: Soul
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 5
   m_Sprite: {fileID: 1954912557898779669, guid: 07425bd8659ff4548a983db5c71462a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -132,7 +132,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

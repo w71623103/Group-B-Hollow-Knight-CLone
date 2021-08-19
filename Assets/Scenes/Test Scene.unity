@@ -694,7 +694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5497620752830773191, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: animationDelayer
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911378, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Name
@@ -706,11 +706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911382, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -295.6
+      value: -198.1
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911382, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 139.6
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911382, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_LocalPosition.z
