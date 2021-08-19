@@ -403,6 +403,7 @@ MonoBehaviour:
   jumpForceADD: 5
   jumpMinForce: 50
   isJumped: 0
+  groundCheckRayLength: 2.86
 --- !u!114 &8375665111361599140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,7 +469,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.010634899, y: -0.46961105}
+  m_Offset: {x: 0, y: -0.46961105}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
