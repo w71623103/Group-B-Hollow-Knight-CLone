@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Vengefly Die.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Vengefly Die.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Vengefly.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Vengefly.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/enemy scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +51,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Room.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoulMeterSO.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/objectMoving.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Falling Spike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Attack.cs" />
@@ -68,13 +61,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/LoadScene.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CeilingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackHorizontal.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Enemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Vengefly.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerMovement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -146,6 +140,7 @@
       <workItem from="1628805050781" duration="1218000" />
       <workItem from="1628869997817" duration="7687000" />
       <workItem from="1629159753351" duration="1627000" />
+      <workItem from="1629330442445" duration="3273000" />
     </task>
     <servers />
   </component>

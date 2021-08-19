@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpMinForce = 10f;
     public bool isJumped = false;
 
+    public float groundCheckRayLength = 3.8f;
+
 
     private int _JTUPHash;
     private int _JTDownHash;
@@ -132,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Movement()
     {
-        
+        CheckGrounded();
         horizontalMovement = playerController.inputAxis.x * playerMovementSpeed;
 
         playerRB.velocity = new Vector2(horizontalMovement, playerRB.velocity.y);
@@ -155,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    /*void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -164,7 +166,7 @@ public class PlayerMovement : MonoBehaviour
             float angle = Vector3.Angle(hit, Vector3.up);
             if (Mathf.Approximately(angle, 0)) isGrounded = true;
         }
-    }
+    }*/
 
     /*
     void OnCollisionStay2D(Collision2D collision)
@@ -175,13 +177,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }*/
 
-    void OnCollisionExit2D(Collision2D collision)
+    /*void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
             //playerAudio.StopWalking();
         }
+    }*/
+
+    void CheckGrounded()
+    {
+        LayerMask mask = LayerMask.GetMask("Ground");
+        bool cast = Physics2D.BoxCast(new Vector2(transform.position.x, transform.position.y), new Vector2(2f, 0.1f), 0,
+            Vector2.down, groundCheckRayLength, mask);
+        Debug.DrawRay(transform.position, Vector3.down * groundCheckRayLength, Color.blue);
+        isGrounded = cast;
     }
 
 }
