@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Focus : MonoBehaviour
+public class FocusTest : MonoBehaviour
 {
     public enum FocusState
     {
@@ -11,23 +11,26 @@ public class Focus : MonoBehaviour
         Finish,
     };
 
-    public int counter = 0;
+    //public int counter = 0;
     public Player player;
     public FocusState fState = FocusState.Default;
     private int fsHash;
-    private int ffHash;
+    //private int ffHash;
     public Animator playerAN;
-    public int healtphase = 33;
+    //public int healtphase = 33;
 
+
+    // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Player>();
         playerAN = GetComponent<Animator>();
         fsHash = Animator.StringToHash("FocusStart");
-        ffHash = Animator.StringToHash("FocusFinish"); 
+        //ffHash = Animator.StringToHash("FocusFinish");
     }
 
-    public void focus() 
+    // Update is called once per frame
+    void Update()
     {
         switch (fState)
         {
@@ -39,29 +42,10 @@ public class Focus : MonoBehaviour
                 }
                 break;
             case FocusState.Process:
-                if (player.playerController.inputFocusDown && player.soul > 0)
-                {
-                    /* Cannot work
-                    player.soul--;
-                    if (counter >= healtphase)
-                    {
-                        if (player.Hp < player.hpMax)
-                        {
-                            player.Hp++;
-                        }
-                        counter = 0;
-                    }
-                    counter++;
-                    */
-                }
-                else 
-                {
-                    fState = FocusState.Finish;
-                    counter = 0;
-                }
+                fState = FocusState.Finish;
                 break;
             case FocusState.Finish:
-                playerAN.SetTrigger(ffHash);
+                //playerAN.SetTrigger(ffHash);
                 fState = FocusState.Default;
                 break;
         }

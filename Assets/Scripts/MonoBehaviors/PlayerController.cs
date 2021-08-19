@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool input0Down;
     public bool input1Down;
     public bool inputFocus;
+    public bool inputFocusDown;
 
     void Update()
     {
@@ -23,5 +24,6 @@ public class PlayerController : MonoBehaviour
         input0Down = Input.GetKeyDown(playerInput.key0);
         input1Down = Input.GetKeyDown(playerInput.key1);
         inputFocus = Input.GetKey(playerInput.keyFocus);
+        inputFocusDown = Input.GetKeyDown(playerInput.keyFocus);
     }
 }

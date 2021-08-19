@@ -672,6 +672,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5497620752830773191, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6085857507960911378, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -905,6 +909,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 640513773}
     m_Modifications:
+    - target: {fileID: 3233473675886348214, guid: 4804303b960a68145812c7bbba62a610, type: 3}
+      propertyPath: m_Size.x
+      value: 12.838112
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233473675886348214, guid: 4804303b960a68145812c7bbba62a610, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.020204782
+      objectReference: {fileID: 0}
     - target: {fileID: 3352545333236210939, guid: 4804303b960a68145812c7bbba62a610, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3958,6 +3970,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 640513773}
     m_Modifications:
+    - target: {fileID: 3233473675886348214, guid: 4804303b960a68145812c7bbba62a610, type: 3}
+      propertyPath: m_Size.x
+      value: 11.545798
+      objectReference: {fileID: 0}
+    - target: {fileID: 3233473675886348214, guid: 4804303b960a68145812c7bbba62a610, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.77289915
+      objectReference: {fileID: 0}
     - target: {fileID: 3352545333236210939, guid: 4804303b960a68145812c7bbba62a610, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -10183,6 +10203,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 640513773}
     m_Modifications:
+    - target: {fileID: 3232791479489160811, guid: 38705dc372dd1064686912e46c8bc409, type: 3}
+      propertyPath: m_Size.y
+      value: 3.249895
+      objectReference: {fileID: 0}
+    - target: {fileID: 3232791479489160811, guid: 38705dc372dd1064686912e46c8bc409, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.023613393
+      objectReference: {fileID: 0}
     - target: {fileID: 3431431740793345560, guid: 38705dc372dd1064686912e46c8bc409, type: 3}
       propertyPath: m_Name
       value: walltile (1)
