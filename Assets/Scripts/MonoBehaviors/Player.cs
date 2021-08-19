@@ -173,4 +173,9 @@ public class Player : MonoBehaviour
         if(Hp+val <= hpMax) Hp+=val ;
         UIManager.m_HealthChange();
     }
+
+    public void healMax()
+    {
+        Hp = hpMax;
+    }
 }
