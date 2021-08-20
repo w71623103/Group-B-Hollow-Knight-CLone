@@ -375,6 +375,7 @@ MonoBehaviour:
   knockUpForceGroundSpikes: 60
   room: {fileID: 0}
   _isMove: 1
+  isFocusReady: 0
 --- !u!114 &5497620752830773191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +618,9 @@ MonoBehaviour:
   audioJump: {fileID: 8300000, guid: af3f75accbf99ec4f88b05b3c19d2172, type: 3}
   audioLand: {fileID: 8300000, guid: 867f3ee5585fd2f49a7bd4fded1ba490, type: 3}
   audioHurt: {fileID: 8300000, guid: 6ac4c18c53660ba4889aae46d7cedfbc, type: 3}
+  audioFocusReady: {fileID: 8300000, guid: 6c605602662c8c54dbd36b8a83319036, type: 3}
+  audioFocusCharging: {fileID: 8300000, guid: 5ceed068797f7074bb8d55c7e3595c39, type: 3}
+  audioFocusHeal: {fileID: 8300000, guid: e9ecb3a81e4197c408d64ed893002fea, type: 3}
 --- !u!82 &2139374265885403035
 AudioSource:
   m_ObjectHideFlags: 0

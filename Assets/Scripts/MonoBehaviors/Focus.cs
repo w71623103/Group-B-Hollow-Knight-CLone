@@ -16,7 +16,9 @@ public class Focus : MonoBehaviour
     public FocusState fState = FocusState.Default;
     private int fsHash;
     private int ffHash;
+    private int fpHash;
     public Animator playerAN;
+    private PlayerAudio _playerAudio;
     public float TimeLimit = 1f;
     //public float animationDelayer = 0.5f;
 
@@ -26,6 +28,9 @@ public class Focus : MonoBehaviour
         playerAN = GetComponent<Animator>();
         fsHash = Animator.StringToHash("FocusStart");
         ffHash = Animator.StringToHash("FocusFinish");
+        fpHash = Animator.StringToHash("FocusStop");
+
+        _playerAudio = GetComponent<PlayerAudio>();
         //TimeLimit /= animationDelayer;
     }
 
@@ -46,7 +51,7 @@ public class Focus : MonoBehaviour
                 if (player.playerController.inputFocus && player.soul > 0f)
                 {
                     //Debug.Log("AAA");
-                    
+                    _playerAudio.PlayFocus();
                     counter += Time.deltaTime;
                     player.decreaseSoul(Time.deltaTime*(33/TimeLimit));
                     if (counter > TimeLimit)
@@ -56,6 +61,7 @@ public class Focus : MonoBehaviour
                         player.soul = Mathf.Ceil(player.soul);
                         counter = 0;
                         fState = FocusState.Finish;
+                        _playerAudio.StopFocus();
                     }
                 }
                 else 
@@ -63,12 +69,15 @@ public class Focus : MonoBehaviour
                     //counter++;
                     
                     
-                    fState = FocusState.Finish;
+                    fState = FocusState.Default;
                     counter = 0;
+                    playerAN.SetTrigger(fpHash);
+                    _playerAudio.StopFocus();
                 }
                 break;
             case FocusState.Finish:
                 playerAN.SetTrigger(ffHash);
+                _playerAudio.PlayFocusHeal();
                 fState = FocusState.Default;
                 break;
         }

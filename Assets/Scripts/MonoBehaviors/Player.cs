@@ -28,6 +28,8 @@ public class Player : MonoBehaviour
 
 
     public bool _isMove = true;
+
+    public bool isFocusReady;
     
     
     // Start is called before the first frame update
@@ -82,6 +84,7 @@ public class Player : MonoBehaviour
             case "Soul":
                 Destroy(collision.gameObject);
                 soul += 11f;
+                checkFocusReady();
                 UIManager.m_SoulChange();
 
                 
@@ -167,18 +170,32 @@ public class Player : MonoBehaviour
     public void decreaseSoul(float decreaseVal) 
     {
         soul -= decreaseVal;
+        checkFocusReady();
         UIManager.m_SoulChange();
     }
 
     public void heal(int val)
     {
         if(Hp+val <= hpMax) Hp+=val;
-        
         UIManager.m_HealthChange();
     }
 
     public void healMax()
     {
         Hp = hpMax;
+    }
+
+    public void checkFocusReady()
+    {
+        if (!isFocusReady && soul >= 33)
+        {
+            isFocusReady = true;
+            playerAudio.PlayFocusReady();
+        }
+
+        if (isFocusReady && soul < 33)
+        {
+            isFocusReady = false;
+        }
     }
 }

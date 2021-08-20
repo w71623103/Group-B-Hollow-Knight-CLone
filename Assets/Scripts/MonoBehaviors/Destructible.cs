@@ -32,12 +32,16 @@ public class Destructible : MonoBehaviour
     {
         if (!isQuitting && !GameManager.Instance.isLoadNewScene)
         {
-            if (corpse) Instantiate(corpse, transform.position, Quaternion.identity);
+            if (corpse)
+            {
+                var temp0 = Instantiate(corpse, transform.position, Quaternion.identity);
+                temp0.transform.localScale = transform.localScale;
+            }
 
             for (int i = 0; i < moneyDropped; i++)
             {
-                var temp = Instantiate(money, transform.position, Quaternion.identity);
-                temp.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-3f, 3f), 10), ForceMode2D.Impulse);
+                var temp1 = Instantiate(money, transform.position, Quaternion.identity);
+                temp1.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-3f, 3f), 10), ForceMode2D.Impulse);
             }
         }
     }
