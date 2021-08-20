@@ -314,6 +314,7 @@ MonoBehaviour:
   jumpForceADD: 1.3
   jumpMinForce: 10
   isJumped: 0
+  groundCheckRayLength: 3.8
 --- !u!114 &49909088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +331,7 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   playerController: {fileID: 0}
   playerAudio: {fileID: 0}
+  focus: {fileID: 0}
   soul: 0
   soulMax: 99
   money: 0
@@ -338,8 +340,11 @@ MonoBehaviour:
   stun: 0
   stunMax: 15
   knockbackForce: 10
+  knockUpForceEnemy: 20
+  knockUpForceGroundSpikes: 60
   room: {fileID: 0}
   _isMove: 1
+  isFocusReady: 0
 --- !u!114 &49909089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,6 +363,8 @@ MonoBehaviour:
   inputJump: 0
   input0Down: 0
   input1Down: 0
+  inputFocus: 0
+  inputFocusDown: 0
 --- !u!1 &438606347
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1
   corpse: {fileID: 0}
+  money: {fileID: 0}
+  moneyDropped: 3
   stun: 0
   stunMax: 20
   knockbackForce: 10
@@ -725,6 +734,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccdb72fc93e55a440a528966cc23c6b0, type: 3}
+--- !u!1 &770415265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 770415267}
+  - component: {fileID: 770415266}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &770415266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770415265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69460de5992a8f9498fd7cf04fb79bd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLoadNewScene: 0
+  endSceneName: Main Menu
+  deathSceneName: Main Menu
+--- !u!4 &770415267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770415265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5359312, y: 4.9969645, z: -431.9497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890629187
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,6 +905,7 @@ MonoBehaviour:
   countdown: 0
   countHit: 5
   countRecover: 10
+  soul: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &1073957159 stripped
 MonoBehaviour:
@@ -987,6 +1043,7 @@ MonoBehaviour:
   countdown: 0
   countHit: 5
   countRecover: 20
+  soul: {fileID: 0}
   player: {fileID: 0}
 --- !u!1001 &1844455555
 PrefabInstance:
@@ -1174,6 +1231,7 @@ MonoBehaviour:
   countdown: 0
   countHit: 5
   countRecover: 10
+  soul: {fileID: 0}
   player: {fileID: 0}
   bounceForceSpikes: 40
   bounceForceOther: 25
@@ -1184,6 +1242,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 186598403341347017, guid: 4f48177a78a26b74798be5c22c336ca3, type: 3}
+      propertyPath: money
+      value: 
+      objectReference: {fileID: 6857885054926600083, guid: 78df41f648955444597a24046254d4e7, type: 3}
     - target: {fileID: 186598403341347018, guid: 4f48177a78a26b74798be5c22c336ca3, type: 3}
       propertyPath: m_Name
       value: Door Destructible
@@ -1194,11 +1256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 186598403341347023, guid: 4f48177a78a26b74798be5c22c336ca3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.92
+      value: -12.31
       objectReference: {fileID: 0}
     - target: {fileID: 186598403341347023, guid: 4f48177a78a26b74798be5c22c336ca3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27
+      value: 4.01
       objectReference: {fileID: 0}
     - target: {fileID: 186598403341347023, guid: 4f48177a78a26b74798be5c22c336ca3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1251,11 +1313,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4146329471392628085, guid: 0f940820fb8a722428abfedcf611c78d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.33
+      value: -4.52
       objectReference: {fileID: 0}
     - target: {fileID: 4146329471392628085, guid: 0f940820fb8a722428abfedcf611c78d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.31
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 4146329471392628085, guid: 0f940820fb8a722428abfedcf611c78d, type: 3}
       propertyPath: m_LocalPosition.z
