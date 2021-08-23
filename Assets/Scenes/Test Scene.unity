@@ -3198,6 +3198,7 @@ MonoBehaviour:
   isLoadNewScene: 0
   endSceneName: Main Menu
   deathSceneName: Main Menu
+  start: {fileID: 450173158}
 --- !u!1001 &398423832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3771,6 +3772,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6271313734445072207, guid: 38705dc372dd1064686912e46c8bc409, type: 3}
   m_PrefabInstance: {fileID: 446837309}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &450173158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 169019254228747445, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
+  m_PrefabInstance: {fileID: 869380547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c7f861ec2727dd4da693a620ebbdf0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &456287148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6556696399384101780, guid: f673538b8355003488ecd7fe80a082e5, type: 3}
@@ -7019,7 +7031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747443, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -155.20406
+      value: -127.2
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747443, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7027,7 +7039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747443, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.150148
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747443, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7059,15 +7071,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747444, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_Size.x
-      value: 69.47644
+      value: 55.59189
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747444, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_Offset.x
-      value: 29.284119
-      objectReference: {fileID: 0}
-    - target: {fileID: 169019254228747444, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+      value: -2.1832428
       objectReference: {fileID: 0}
     - target: {fileID: 169019254228747446, guid: 512493b6224af994b9eaaddb622f45e1, type: 3}
       propertyPath: m_Name

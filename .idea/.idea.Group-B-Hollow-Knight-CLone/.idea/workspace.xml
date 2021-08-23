@@ -2,36 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/DoorBreak.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/DoorBreak.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/DoorBrokenIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/DoorBrokenIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/GrassCut.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/GrassCut.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/GrassIdle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/GrassIdle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/doorbreak_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/doorbreak_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/grassbreak_0.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Environment/grassbreak_0.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/doorbreak.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/doorbreak.PNG.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/grassbreak.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Environment/grassbreak.PNG.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door Broken.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door Broken.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass Cut.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Grass Cut.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/room.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/attack test scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/attack test scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Focus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Focus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +60,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Crawlid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Ceiling Spike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/LoadScene.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/CeilingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/FallingSpike.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/AttackHorizontal.cs" />
@@ -94,8 +69,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Destructible.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/PlayerAudio.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Focus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -169,6 +145,7 @@
       <workItem from="1629159753351" duration="1627000" />
       <workItem from="1629330442445" duration="3273000" />
       <workItem from="1629467388901" duration="2405000" />
+      <workItem from="1629688112875" duration="2725000" />
     </task>
     <servers />
   </component>
