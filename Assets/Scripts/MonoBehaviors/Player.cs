@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         _playerHitAnim = Animator.StringToHash("Hit");
 
         GameManager.m_Death += DieAnim;
+        GameManager.m_Respawn += Respawn;
     }
 
     // Update is called once per frame
@@ -157,6 +159,7 @@ public class Player : MonoBehaviour
             UIManager.m_HealthChange();
             if (Hp <= 0)
             {
+                stun = 60;
                 GameManager.m_Death();
             }
         }
@@ -197,5 +200,16 @@ public class Player : MonoBehaviour
         {
             isFocusReady = false;
         }
+    }
+
+    public void Respawn()
+    {
+        Hp = hpMax;
+        soul = 0;
+        UIManager.m_SoulChange();
+        UIManager.m_HealthChange();
+        GetComponent<SpriteRenderer>().color = Color.white;
+        stun = 0;
+        playerMovement.playerAN.SetTrigger("Respawn");
     }
 }
