@@ -13,7 +13,6 @@ public class EndingSceneManager : MonoBehaviour
     public GameObject cut2;
     public GameObject cut3;
     public GameObject cut4;
-    public GameObject cut5;
     public Button replayB;
     public int counter = 1;
     // Start is called before the first frame update
@@ -41,9 +40,6 @@ public class EndingSceneManager : MonoBehaviour
                     break;
                 case 4:
                     Destroy(cut4.gameObject);
-                    break;
-                case 5:
-                    Destroy(cut5.gameObject);
                     replayB.interactable = true;
                     break;
             }

@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &65974659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -262,8 +262,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 7482667652216324306, guid: ab012493f7c60d24e95f4c787ad7963f, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.8159199, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 902067e7eb56db74198ce7953ea0fdec, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -281,8 +281,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107184905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0691, y: -0.0253, z: 0}
-  m_LocalScale: {x: 17.9182, y: 10.1706, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9321367, y: 0.9321367, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -687,8 +687,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 70
-  m_Sprite: {fileID: 7482667652216324306, guid: ab012493f7c60d24e95f4c787ad7963f, type: 3}
-  m_Color: {r: 1, g: 0.115849376, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 405f6d416085eee479b7b3d8c9f13bb0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -706,8 +706,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412188369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0633, y: -0.0269, z: 0}
-  m_LocalScale: {x: 17.8866, y: 10.2339, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9321367, y: 0.9321367, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -769,8 +769,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 7482667652216324306, guid: ab012493f7c60d24e95f4c787ad7963f, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.41141605, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 341add517517fe34e9d0a72bc6d573bb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -788,8 +788,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445243242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0475, y: 0.0447, z: 0}
-  m_LocalScale: {x: 17.855, y: 10.1706, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9321367, y: 0.9321367, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -910,7 +910,6 @@ MonoBehaviour:
   cut2: {fileID: 107184905}
   cut3: {fileID: 1818897764}
   cut4: {fileID: 1412188369}
-  cut5: {fileID: 65974658}
   replayB: {fileID: 1963311933}
   counter: 1
 --- !u!4 &1708655936
@@ -984,8 +983,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 89
-  m_Sprite: {fileID: 7482667652216324306, guid: ab012493f7c60d24e95f4c787ad7963f, type: 3}
-  m_Color: {r: 1, g: 0.97348684, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e5cd6c0509067af4a99a9b087237d2f6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1003,8 +1002,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818897764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0233, y: -0.0695, z: 0}
-  m_LocalScale: {x: 17.8866, y: 10.139, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9321367, y: 0.9321367, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1045,8 +1044,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: -340}
-  m_SizeDelta: {x: 808.07, y: 151.51}
+  m_AnchoredPosition: {x: 0, y: -130}
+  m_SizeDelta: {x: 400, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963311933
 MonoBehaviour:

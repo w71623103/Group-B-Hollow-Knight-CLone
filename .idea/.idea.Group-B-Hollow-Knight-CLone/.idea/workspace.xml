@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2115110b-bb97-4160-a93f-3a97919505f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Group-B-Hollow-Knight-CLone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Player/PlayerAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/room.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/2.PNG.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/3.PNG.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Cutscene/4.PNG.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EndingSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EndingSceneManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +77,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Focus.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviors/EndingSceneManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vieUFX1qsjnZ997cSqFhHMTiAc" />
@@ -146,6 +152,7 @@
       <workItem from="1629330442445" duration="3273000" />
       <workItem from="1629467388901" duration="2405000" />
       <workItem from="1629688112875" duration="2725000" />
+      <workItem from="1629771821497" duration="346000" />
     </task>
     <servers />
   </component>
